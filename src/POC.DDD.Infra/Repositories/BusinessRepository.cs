@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using POC.DDD.Domain.Business;
-using POC.DDD.Infra.Entities;
+using POC.DDD.Infra.DTOs;
 using POC.DDD.Infra.Extensions;
 using POC.DDD.Infra.Repositories.Abstractions;
 
@@ -24,7 +24,7 @@ namespace POC.DDD.Infra.Repositories
 
         public async Task<Business> CreateAsync(Business business)
         {
-            var createdBusiness = await _businessContext.Businesses.AddAsync(business.ToEntity());
+            var createdBusiness = await _businessContext.Businesses.AddAsync(business.ToDto());
 
             await _businessContext.SaveChangesAsync();
 
@@ -33,7 +33,7 @@ namespace POC.DDD.Infra.Repositories
 
         public async Task<Business> UpdateAsync(Business business)
         {
-            var updatedBusiness = _businessContext.Businesses.Update(business.ToEntity());
+            var updatedBusiness = _businessContext.Businesses.Update(business.ToDto());
 
             await _businessContext.SaveChangesAsync();
 
@@ -42,7 +42,7 @@ namespace POC.DDD.Infra.Repositories
 
         public async Task DeleteAsync(int id)
         {
-            _businessContext.Businesses.Remove(new BusinessEntity { Id = id });
+            _businessContext.Businesses.Remove(new BusinessDto { Id = id });
 
             await _businessContext.SaveChangesAsync();
         }

@@ -1,18 +1,18 @@
 ﻿using POC.DDD.Domain.Business;
-using POC.DDD.Infra.Entities;
+using POC.DDD.Infra.DTOs;
 
 namespace POC.DDD.Infra.Extensions
 {
-    public static class InfraEntityMapper
+    public static class InfraDtoMapper
     {
-        public static BusinessEntity ToEntity(this Business business)
+        public static BusinessDto ToDto(this Business business)
         {
             if (business == null) return null;
 
-            return new BusinessEntity { Id = business.Id, Name = business.Name };
+            return new BusinessDto { Id = business.Id, Name = business.Name };
         }
 
-        public static Business ToDomain(this BusinessEntity businessEntity)
+        public static Business ToDomain(this BusinessDto businessEntity)
         {
             if (businessEntity == null) return null;
 
