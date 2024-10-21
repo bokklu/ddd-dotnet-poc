@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34928.147
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "POC.DDD.Api", "..\poc-ddd\POC.DDD\POC.DDD.Api\POC.DDD.Api.csproj", "{1142E9DD-B1CF-4D84-A171-D008B282F397}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "POC.DDD.Application", "..\poc-ddd\POC.DDD\POC.DDD.Application\POC.DDD.Application.csproj", "{A57483A2-E57B-4FF3-BD1B-ECF4D6ADAFBE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "POC.DDD.Domain", "..\poc-ddd\POC.DDD\POC.DDD.Domain\POC.DDD.Domain.csproj", "{DB688D38-227F-4982-BC03-85BD7548CD49}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "POC.DDD.Infra", "..\poc-ddd\POC.DDD\POC.DDD.Infra\POC.DDD.Infra.csproj", "{39D7EDBE-17C8-4783-AE9E-949F37BF4880}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "POC.DDD.Shared", "..\poc-ddd\POC.DDD\POC.DDD.Shared\POC.DDD.Shared.csproj", "{045E3547-9749-43AE-BB35-8EEDEF9BCBA3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1142E9DD-B1CF-4D84-A171-D008B282F397}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1142E9DD-B1CF-4D84-A171-D008B282F397}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1142E9DD-B1CF-4D84-A171-D008B282F397}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1142E9DD-B1CF-4D84-A171-D008B282F397}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A57483A2-E57B-4FF3-BD1B-ECF4D6ADAFBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A57483A2-E57B-4FF3-BD1B-ECF4D6ADAFBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A57483A2-E57B-4FF3-BD1B-ECF4D6ADAFBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A57483A2-E57B-4FF3-BD1B-ECF4D6ADAFBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB688D38-227F-4982-BC03-85BD7548CD49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB688D38-227F-4982-BC03-85BD7548CD49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB688D38-227F-4982-BC03-85BD7548CD49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB688D38-227F-4982-BC03-85BD7548CD49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39D7EDBE-17C8-4783-AE9E-949F37BF4880}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39D7EDBE-17C8-4783-AE9E-949F37BF4880}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39D7EDBE-17C8-4783-AE9E-949F37BF4880}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39D7EDBE-17C8-4783-AE9E-949F37BF4880}.Release|Any CPU.Build.0 = Release|Any CPU
+		{045E3547-9749-43AE-BB35-8EEDEF9BCBA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{045E3547-9749-43AE-BB35-8EEDEF9BCBA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{045E3547-9749-43AE-BB35-8EEDEF9BCBA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{045E3547-9749-43AE-BB35-8EEDEF9BCBA3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {24540D84-DC1F-433F-802C-FC14FB643283}
+	EndGlobalSection
+EndGlobal

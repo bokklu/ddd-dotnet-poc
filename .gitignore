@@ -1,0 +1,10 @@
+# Solution Items
+*.vs
+*bin
+*obj
+
+# Logs
+log*.txt
+
+# Docker
+.env
