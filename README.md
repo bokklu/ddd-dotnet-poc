@@ -8,6 +8,8 @@ As you can see from the diagram:
 - The Application Layer depends only on the Domain Layer.
 - The Domain layer has no dependencies on any layer.
 
+![alt text](image-4.png)
+
 ### Repository Interfaces
 
 Since repository interfaces deal with aggregates, the definition of these interfaces should reside in the Domain Layer, however their implementation should reside in the Infra Layer.
