@@ -1,9 +1,9 @@
 ﻿using FluentValidation;
+using POC.DDD.Application.Abstractions;
 using POC.DDD.Application.DTOs.Input;
 using POC.DDD.Application.DTOs.Output;
 using POC.DDD.Application.Extensions;
-using POC.DDD.Application.Services.Abstractions;
-using POC.DDD.Infra.Repositories.Abstractions;
+using POC.DDD.Domain.Abstractions;
 using POC.DDD.Shared;
 
 namespace POC.DDD.Application.Services

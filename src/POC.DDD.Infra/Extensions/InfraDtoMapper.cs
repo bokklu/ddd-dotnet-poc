@@ -1,4 +1,4 @@
-﻿using POC.DDD.Domain.Business;
+﻿using POC.DDD.Domain.Entities;
 using POC.DDD.Infra.DTOs;
 
 namespace POC.DDD.Infra.Extensions

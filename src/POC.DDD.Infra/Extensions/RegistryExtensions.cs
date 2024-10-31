@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Diagnostics;
 using Microsoft.Extensions.DependencyInjection;
+using POC.DDD.Domain.Abstractions;
 using POC.DDD.Infra.Repositories;
-using POC.DDD.Infra.Repositories.Abstractions;
 
 namespace POC.DDD.Infra.Extensions
 {

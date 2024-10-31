@@ -1,6 +1,6 @@
-﻿using POC.DDD.Domain.Business;
+﻿using POC.DDD.Domain.Entities;
 
-namespace POC.DDD.Infra.Repositories.Abstractions
+namespace POC.DDD.Domain.Abstractions
 {
     public interface IBusinessRepository
     {

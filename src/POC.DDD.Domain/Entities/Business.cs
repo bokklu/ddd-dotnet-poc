@@ -1,4 +1,4 @@
-﻿namespace POC.DDD.Domain.Business
+﻿namespace POC.DDD.Domain.Entities
 {
     public class Business
     {

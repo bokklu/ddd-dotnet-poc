@@ -11,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\POC.DDD.Infra\POC.DDD.Infra.csproj" />
+    <ProjectReference Include="..\POC.DDD.Domain\POC.DDD.Domain.csproj" />
     <ProjectReference Include="..\POC.DDD.Shared\POC.DDD.Shared.csproj" />
   </ItemGroup>
 

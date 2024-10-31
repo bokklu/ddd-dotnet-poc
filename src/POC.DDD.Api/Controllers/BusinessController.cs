@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using POC.DDD.Application.Abstractions;
 using POC.DDD.Application.DTOs.Input;
-using POC.DDD.Application.Services.Abstractions;
 
 namespace POC.DDD.Api.Controllers
 {

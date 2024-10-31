@@ -12,6 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\POC.DDD.Application\POC.DDD.Application.csproj" />
     <ProjectReference Include="..\POC.DDD.Domain\POC.DDD.Domain.csproj" />
   </ItemGroup>
 

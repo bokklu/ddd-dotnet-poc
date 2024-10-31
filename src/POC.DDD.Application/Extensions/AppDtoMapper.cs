@@ -1,6 +1,6 @@
 ﻿using POC.DDD.Application.DTOs.Input;
 using POC.DDD.Application.DTOs.Output;
-using POC.DDD.Domain.Business;
+using POC.DDD.Domain.Entities;
 
 namespace POC.DDD.Application.Extensions
 {

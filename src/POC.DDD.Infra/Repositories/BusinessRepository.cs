@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using POC.DDD.Domain.Business;
+using POC.DDD.Domain.Abstractions;
+using POC.DDD.Domain.Entities;
 using POC.DDD.Infra.DTOs;
 using POC.DDD.Infra.Extensions;
-using POC.DDD.Infra.Repositories.Abstractions;
 
 namespace POC.DDD.Infra.Repositories
 {

@@ -2,7 +2,7 @@
 using POC.DDD.Application.DTOs.Output;
 using POC.DDD.Shared;
 
-namespace POC.DDD.Application.Services.Abstractions
+namespace POC.DDD.Application.Abstractions
 {
     public interface IBusinessService
     {

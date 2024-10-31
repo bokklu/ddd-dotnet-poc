@@ -1,8 +1,8 @@
 ﻿using FluentValidation;
 using Microsoft.Extensions.DependencyInjection;
+using POC.DDD.Application.Abstractions;
 using POC.DDD.Application.DTOs.Input;
 using POC.DDD.Application.Services;
-using POC.DDD.Application.Services.Abstractions;
 using POC.DDD.Application.Validators;
 
 namespace POC.DDD.Application.Extensions

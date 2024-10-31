@@ -1,8 +1,16 @@
 # poc-domain-driven-design
 
+![alt text](image-2.png)
+
+As you can see from the diagram:
+
+- The Infrastructure layer depends on Applicaton and Domain Layer.
+- The Application Layer depends only on the Domain Layer.
+- The Domain layer has no dependencies on any layer.
+
 ### Repository Interfaces
 
-Since repository interfaces deal with aggregates, the definition of these interfaces should reside in the Domain Layer, however their implementation should reside in the Infra Layer. 
+Since repository interfaces deal with aggregates, the definition of these interfaces should reside in the Domain Layer, however their implementation should reside in the Infra Layer.
 
 ### Messaging Interfaces
 
