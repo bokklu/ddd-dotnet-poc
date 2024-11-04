@@ -47,9 +47,11 @@ namespace POC.DDD.Application.Services
                 return Result<BusinessResponse>.Fail(new ResultError(ResultErrorStatus.BadRequest, string.Join(", ", validationResult.Errors)));
             }
 
-            var createdBusiness = await _businessRepository.CreateAsync(request.ToDomain());
+            var business = request.ToDomain();
 
-            return Result<BusinessResponse>.Success(createdBusiness.ToResponse());
+            var createdBusinessId = await _businessRepository.CreateAsync(business);
+
+            return Result<BusinessResponse>.Success(business.ToResponse(createdBusinessId));
         }
 
         public async Task<Result<BusinessResponse>> UpdateAsync(int id, BusinessRequest request)
@@ -73,9 +75,11 @@ namespace POC.DDD.Application.Services
                 return Result<BusinessResponse>.Fail(new ResultError(ResultErrorStatus.NotFound, $"Business Id: {id} does not exist."));
             }
 
-            var createdBusiness = await _businessRepository.UpdateAsync(request.ToDomain(id));
+            business.Update(request.Name);
 
-            return Result<BusinessResponse>.Success(createdBusiness.ToResponse());
+            await _businessRepository.UpdateAsync(business);
+
+            return Result<BusinessResponse>.Success(business.ToResponse());
         }
 
         public async Task<Result<int>> DeleteAsync(int id)

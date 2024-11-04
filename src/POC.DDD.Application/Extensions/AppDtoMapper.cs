@@ -6,13 +6,13 @@ namespace POC.DDD.Application.Extensions
 {
     public static class AppDtoMapper
     {
-        public static BusinessResponse ToResponse(this Business business)
+        public static BusinessResponse ToResponse(this Business business, int? businessId = null)
         {
             if (business == null) return null;
 
             return new BusinessResponse
             {
-                Id = business.Id,
+                Id = businessId ?? business.Id,
                 Name = business.Name
             };
         }

@@ -5,8 +5,8 @@ namespace POC.DDD.Domain.Abstractions
     public interface IBusinessRepository
     {
         Task<Business> GetAsync(int id);
-        Task<Business> CreateAsync(Business business);
-        Task<Business> UpdateAsync(Business business);
+        Task<int> CreateAsync(Business business);
+        Task UpdateAsync(Business business);
         Task DeleteAsync(int id);
     }
 }

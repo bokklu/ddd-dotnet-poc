@@ -3,11 +3,16 @@
     public class Business
     {
         public int Id { get; }
-        public string Name { get; } = string.Empty;
+        public string Name { get; private set; } = string.Empty;
 
         private Business(int id, string name)
         {
             Id = id;
+            Name = name;
+        }
+
+        public void Update(string name)
+        {
             Name = name;
         }
 

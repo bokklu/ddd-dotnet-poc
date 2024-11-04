@@ -22,22 +22,20 @@ namespace POC.DDD.Infra.Repositories
             return businessEntity.ToDomain();
         }
 
-        public async Task<Business> CreateAsync(Business business)
+        public async Task<int> CreateAsync(Business business)
         {
             var createdBusiness = await _businessContext.Businesses.AddAsync(business.ToDto());
 
             await _businessContext.SaveChangesAsync();
 
-            return createdBusiness.Entity.ToDomain();
+            return createdBusiness.Entity.Id;
         }
 
-        public async Task<Business> UpdateAsync(Business business)
+        public async Task UpdateAsync(Business business)
         {
             var updatedBusiness = _businessContext.Businesses.Update(business.ToDto());
 
             await _businessContext.SaveChangesAsync();
-
-            return updatedBusiness.Entity.ToDomain();
         }
 
         public async Task DeleteAsync(int id)
