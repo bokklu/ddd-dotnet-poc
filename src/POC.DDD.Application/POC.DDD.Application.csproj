@@ -11,8 +11,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\POC.DDD.Api.Models\POC.DDD.Api.Models.csproj" />
     <ProjectReference Include="..\POC.DDD.Domain\POC.DDD.Domain.csproj" />
-    <ProjectReference Include="..\POC.DDD.DTO\POC.DDD.DTO.csproj" />
     <ProjectReference Include="..\POC.DDD.Shared\POC.DDD.Shared.csproj" />
   </ItemGroup>
 

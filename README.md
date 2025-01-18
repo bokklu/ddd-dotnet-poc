@@ -21,3 +21,11 @@ As it stands now, the actual implementation of a consumer and a publisher should
 ### External API Client Interfaces
 
 It depends. If the external API is closely tied to the domain, and they act almost as they are repositories, then you put their interfaces in the Domain Layer. However I think it makes sense to put the interface in the Application layer when the data retrieved does not have to do with the domain.
+
+### POC.DDD.Api.Models
+
+This class library will contain Request/Response models. It is its own class library as this can eventually be shared as a package to different services.
+
+### POC.DDD.Messages
+
+This class library will contain Message Events. It is its own class library as this can eventually be shared as a package to different consumer services.
